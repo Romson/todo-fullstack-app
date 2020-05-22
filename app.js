@@ -26,7 +26,7 @@ mongodb.connect(
   { useUnifiedTopology: true },
   (err, client) => {
     db = client.db();
-    app.listen(3030, () => {
+    app.listen(port, () => {
       console.log("Server running");
     });
   }
